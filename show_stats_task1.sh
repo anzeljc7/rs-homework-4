@@ -3,6 +3,8 @@
 # stats.txt ima DVA razdelka: 1. med izvajanjem kernela, 2. po koncu.
 # Koristimo PRVI razdelek.
 
+exec > >(tee results_task1.txt)
+
 printf "%-8s | %-4s | %-16s | %-12s | %-14s | %-12s | %-8s\n" \
     "Kernel" "CU" "loadLatency" "vALUInsts" "ldsBankAccess" "totalCycles" "vpc"
 printf '%s\n' "---------------------------------------------------------------------------------"

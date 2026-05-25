@@ -3,6 +3,8 @@
 # stats.txt ima TRI razdelke: 1. divergent kernel, 2. sorted kernel, 3. po koncu.
 # Koristimo PRVI (divergent) in DRUGI (sorted) razdelek.
 
+exec > >(tee results_task3.txt)
+
 printf "%-10s | %-4s | %-12s | %-12s | %-12s | %-12s | %-12s | %-12s\n" \
     "Kernel" "CU" "CFDiv::mean" "CFDiv::stdev" "vALUInsts" "globalReads" "globalWrites" "coalsrLines"
 printf '%s\n' "------------------------------------------------------------------------------------------------------------"
