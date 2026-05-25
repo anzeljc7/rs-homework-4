@@ -3,7 +3,7 @@
 #SBATCH --output=gem5_task1_%j.log
 #SBATCH --cpus-per-task=4
 #SBATCH --ntasks=1
-#SBATCH --time=08:00:00
+#SBATCH --time=24:00:00
 #SBATCH --reservation=fri
 
 GEM5_WORKSPACE=/d/hpc/projects/FRI/GEM5/gem5_workspace
