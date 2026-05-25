@@ -1,5 +1,4 @@
-solution
-test1.out 
+
 hpc_gemm
 test2.out 
 hpc_gemm_v2
@@ -17,14 +16,4 @@ jacobi.c
 *.bin
 *.pyc
 *.o
-moesi_two_level.py
-04-GEM5-RCC/utils/
-*.sh
-!apptainer_make.sh
-workload/lu_decomp/
-__pycache__/
-backup/
-horner_scheme/
-!make_apptainer.sh
-stencil/
-solutions.txt
+context
