@@ -1,0 +1,2382 @@
+make: Entering directory '/d/hpc/home/ta3667/rs-homework-4/histogram'
+mkdir -p ./bin
+/opt/rocm/hip/bin/hipcc  histogram_opt.cpp -o bin/histogram_opt.bin
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Warning: The specified HIP target: gfx902 is unknown. Correct compilation is not guaranteed.
+/opt/rocm/hip/bin/hipcc  histogram_naive.cpp -o bin/histogram_naive.bin
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LANG = "en_US.UTF-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Warning: The specified HIP target: gfx902 is unknown. Correct compilation is not guaranteed.
+make: Leaving directory '/d/hpc/home/ta3667/rs-homework-4/histogram'
+=== Kernel=naive, CU=2 ===
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.2
+gem5 compiled May 14 2025 10:23:50
+gem5 started May 25 2026 21:03:07
+gem5 executing on wn102.arnes.si, pid 1163897
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/VEGA_X86/gem5.opt --outdir=results_task1/naive/cu_2 /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/configs/example/apu_se.py -n 3 --num-compute-units 2 --gfx-version=gfx902 -c ./histogram/bin/histogram_naive.bin
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  1 Num scalar caches =  1 Num CU =  2
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:704: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall get_mempolicy(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Loaded image 512x512
+src/gpu-compute/gpu_compute_driver.cc:675: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mbind(...)
+src/gpu-compute/gpu_compute_driver.cc:283: warn: unimplemented ioctl: AMDKFD_IOC_SET_MEMORY_POLICY
+src/sim/syscall_emul.hh:2033: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/gpu-compute/gpu_compute_driver.cc:144: warn: Unrecognized kfd mmap type 0
+src/gpu-compute/gpu_compute_driver.cc:852: warn: unimplemented ioctl: AMDKFD_IOC_MAP_MEMORY_TO_GPU
+src/gpu-compute/gpu_compute_driver.cc:441: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:585: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:595: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_command_processor.cc:624: warn: Ignoring vendor packet
+GPU Kernel Completed dump and reset
+src/sim/simulate.cc:199: info: Entering event queue @ 108338390000.  Starting simulation...
+Naive histogram computed.
+Bin   0: naive =      0 
+Bin   1: naive =      0 
+Bin   2: naive =      0 
+Bin   3: naive =      0 
+Bin   4: naive =      0 
+Bin   5: naive =      0 
+Bin   6: naive =      0 
+Bin   7: naive =      0 
+Bin   8: naive =      0 
+Bin   9: naive =      0 
+Bin  10: naive =      0 
+Bin  11: naive =      0 
+Bin  12: naive =      0 
+Bin  13: naive =      0 
+Bin  14: naive =      0 
+Bin  15: naive =      0 
+Bin  16: naive =      0 
+Bin  17: naive =      0 
+Bin  18: naive =      0 
+Bin  19: naive =      0 
+Bin  20: naive =      0 
+Bin  21: naive =      0 
+Bin  22: naive =      0 
+Bin  23: naive =      0 
+Bin  24: naive =      0 
+Bin  25: naive =      0 
+Bin  26: naive =      0 
+Bin  27: naive =      0 
+Bin  28: naive =      0 
+Bin  29: naive =      0 
+Bin  30: naive =      0 
+Bin  31: naive =      0 
+Bin  32: naive =      0 
+Bin  33: naive =      0 
+Bin  34: naive =      3 
+Bin  35: naive =      1 
+Bin  36: naive =     15 
+Bin  37: naive =     29 
+Bin  38: naive =     60 
+Bin  39: naive =     73 
+Bin  40: naive =    153 
+Bin  41: naive =    193 
+Bin  42: naive =    320 
+Bin  43: naive =    383 
+Bin  44: naive =    537 
+Bin  45: naive =    706 
+Bin  46: naive =    930 
+Bin  47: naive =   1120 
+Bin  48: naive =   1377 
+Bin  49: naive =   1683 
+Bin  50: naive =   1896 
+Bin  51: naive =   2250 
+Bin  52: naive =   2375 
+Bin  53: naive =   2468 
+Bin  54: naive =   2523 
+Bin  55: naive =   2567 
+Bin  56: naive =   2556 
+Bin  57: naive =   2448 
+Bin  58: naive =   2267 
+Bin  59: naive =   2095 
+Bin  60: naive =   2026 
+Bin  61: naive =   1836 
+Bin  62: naive =   1595 
+Bin  63: naive =   1434 
+Bin  64: naive =   1303 
+Bin  65: naive =   1240 
+Bin  66: naive =   1124 
+Bin  67: naive =   1050 
+Bin  68: naive =    943 
+Bin  69: naive =    901 
+Bin  70: naive =    868 
+Bin  71: naive =    841 
+Bin  72: naive =    851 
+Bin  73: naive =    849 
+Bin  74: naive =    826 
+Bin  75: naive =    823 
+Bin  76: naive =    795 
+Bin  77: naive =    907 
+Bin  78: naive =    885 
+Bin  79: naive =    882 
+Bin  80: naive =    917 
+Bin  81: naive =   1008 
+Bin  82: naive =    982 
+Bin  83: naive =    988 
+Bin  84: naive =   1028 
+Bin  85: naive =    980 
+Bin  86: naive =    996 
+Bin  87: naive =    991 
+Bin  88: naive =   1020 
+Bin  89: naive =   1077 
+Bin  90: naive =   1048 
+Bin  91: naive =   1146 
+Bin  92: naive =   1174 
+Bin  93: naive =   1139 
+Bin  94: naive =   1259 
+Bin  95: naive =   1288 
+Bin  96: naive =   1298 
+Bin  97: naive =   1341 
+Bin  98: naive =   1348 
+Bin  99: naive =   1565 
+Bin 100: naive =   1630 
+Bin 101: naive =   1836 
+Bin 102: naive =   2072 
+Bin 103: naive =   2248 
+Bin 104: naive =   2235 
+Bin 105: naive =   2287 
+Bin 106: naive =   2126 
+Bin 107: naive =   1991 
+Bin 108: naive =   1853 
+Bin 109: naive =   1660 
+Bin 110: naive =   1595 
+Bin 111: naive =   1490 
+Bin 112: naive =   1419 
+Bin 113: naive =   1432 
+Bin 114: naive =   1410 
+Bin 115: naive =   1482 
+Bin 116: naive =   1513 
+Bin 117: naive =   1484 
+Bin 118: naive =   1538 
+Bin 119: naive =   1503 
+Bin 120: naive =   1663 
+Bin 121: naive =   1692 
+Bin 122: naive =   1812 
+Bin 123: naive =   1787 
+Bin 124: naive =   1954 
+Bin 125: naive =   2006 
+Bin 126: naive =   2038 
+Bin 127: naive =   2309 
+Bin 128: naive =   2595 
+Bin 129: naive =   2650 
+Bin 130: naive =   2759 
+Bin 131: naive =   2776 
+Bin 132: naive =   2712 
+Bin 133: naive =   2484 
+Bin 134: naive =   2264 
+Bin 135: naive =   2143 
+Bin 136: naive =   2057 
+Bin 137: naive =   2022 
+Bin 138: naive =   2225 
+Bin 139: naive =   2209 
+Bin 140: naive =   2438 
+Bin 141: naive =   2633 
+Bin 142: naive =   2619 
+Bin 143: naive =   2742 
+Bin 144: naive =   2672 
+Bin 145: naive =   2752 
+Bin 146: naive =   2611 
+Bin 147: naive =   2441 
+Bin 148: naive =   2475 
+Bin 149: naive =   2386 
+Bin 150: naive =   2443 
+Bin 151: naive =   2609 
+Bin 152: naive =   2726 
+Bin 153: naive =   2859 
+Bin 154: naive =   2842 
+Bin 155: naive =   2745 
+Bin 156: naive =   2564 
+Bin 157: naive =   2368 
+Bin 158: naive =   2145 
+Bin 159: naive =   1927 
+Bin 160: naive =   1760 
+Bin 161: naive =   1655 
+Bin 162: naive =   1529 
+Bin 163: naive =   1401 
+Bin 164: naive =   1303 
+Bin 165: naive =   1317 
+Bin 166: naive =   1280 
+Bin 167: naive =   1267 
+Bin 168: naive =   1157 
+Bin 169: naive =   1223 
+Bin 170: naive =   1266 
+Bin 171: naive =   1282 
+Bin 172: naive =   1294 
+Bin 173: naive =   1251 
+Bin 174: naive =   1188 
+Bin 175: naive =   1191 
+Bin 176: naive =   1125 
+Bin 177: naive =   1057 
+Bin 178: naive =    986 
+Bin 179: naive =    878 
+Bin 180: naive =    747 
+Bin 181: naive =    692 
+Bin 182: naive =    669 
+Bin 183: naive =    644 
+Bin 184: naive =    681 
+Bin 185: naive =    635 
+Bin 186: naive =    604 
+Bin 187: naive =    664 
+Bin 188: naive =    720 
+Bin 189: naive =    761 
+Bin 190: naive =    785 
+Bin 191: naive =    865 
+Bin 192: naive =    860 
+Bin 193: naive =    904 
+Bin 194: naive =    936 
+Bin 195: naive =    929 
+Bin 196: naive =    873 
+Bin 197: naive =    926 
+Bin 198: naive =    883 
+Bin 199: naive =    794 
+Bin 200: naive =    805 
+Bin 201: naive =    795 
+Bin 202: naive =    791 
+Bin 203: naive =    807 
+Bin 204: naive =    829 
+Bin 205: naive =    910 
+Bin 206: naive =    990 
+Bin 207: naive =    999 
+Bin 208: naive =    987 
+Bin 209: naive =    967 
+Bin 210: naive =    918 
+Bin 211: naive =    863 
+Bin 212: naive =    779 
+Bin 213: naive =    686 
+Bin 214: naive =    553 
+Bin 215: naive =    443 
+Bin 216: naive =    361 
+Bin 217: naive =    360 
+Bin 218: naive =    321 
+Bin 219: naive =    285 
+Bin 220: naive =    216 
+Bin 221: naive =    206 
+Bin 222: naive =    186 
+Bin 223: naive =    151 
+Bin 224: naive =     99 
+Bin 225: naive =     82 
+Bin 226: naive =     46 
+Bin 227: naive =     57 
+Bin 228: naive =     43 
+Bin 229: naive =     19 
+Bin 230: naive =     17 
+Bin 231: naive =     13 
+Bin 232: naive =      3 
+Bin 233: naive =      9 
+Bin 234: naive =      2 
+Bin 235: naive =      0 
+Bin 236: naive =      1 
+Bin 237: naive =      0 
+Bin 238: naive =      1 
+Bin 239: naive =      0 
+Bin 240: naive =      0 
+Bin 241: naive =      0 
+Bin 242: naive =      0 
+Bin 243: naive =      1 
+Bin 244: naive =      1 
+Bin 245: naive =      1 
+Bin 246: naive =      0 
+Bin 247: naive =      1 
+Bin 248: naive =      0 
+Bin 249: naive =      0 
+Bin 250: naive =      0 
+Bin 251: naive =      0 
+Bin 252: naive =      0 
+Bin 253: naive =      0 
+Bin 254: naive =      0 
+Bin 255: naive =      0 
+breaking loop due to: exiting with last active thread context.
+Ticks: 113478013500
+Exiting because  exiting with last active thread context
+=== Kernel=naive, CU=4 ===
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.2
+gem5 compiled May 14 2025 10:23:50
+gem5 started May 25 2026 21:06:09
+gem5 executing on wn102.arnes.si, pid 1166930
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/VEGA_X86/gem5.opt --outdir=results_task1/naive/cu_4 /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/configs/example/apu_se.py -n 3 --num-compute-units 4 --gfx-version=gfx902 -c ./histogram/bin/histogram_naive.bin
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:704: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall get_mempolicy(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Loaded image 512x512
+src/gpu-compute/gpu_compute_driver.cc:675: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mbind(...)
+src/gpu-compute/gpu_compute_driver.cc:283: warn: unimplemented ioctl: AMDKFD_IOC_SET_MEMORY_POLICY
+src/sim/syscall_emul.hh:2033: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/gpu-compute/gpu_compute_driver.cc:144: warn: Unrecognized kfd mmap type 0
+src/gpu-compute/gpu_compute_driver.cc:852: warn: unimplemented ioctl: AMDKFD_IOC_MAP_MEMORY_TO_GPU
+src/gpu-compute/gpu_compute_driver.cc:441: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:585: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:595: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_command_processor.cc:624: warn: Ignoring vendor packet
+GPU Kernel Completed dump and reset
+src/sim/simulate.cc:199: info: Entering event queue @ 108319334000.  Starting simulation...
+Naive histogram computed.
+Bin   0: naive =      0 
+Bin   1: naive =      0 
+Bin   2: naive =      0 
+Bin   3: naive =      0 
+Bin   4: naive =      0 
+Bin   5: naive =      0 
+Bin   6: naive =      0 
+Bin   7: naive =      0 
+Bin   8: naive =      0 
+Bin   9: naive =      0 
+Bin  10: naive =      0 
+Bin  11: naive =      0 
+Bin  12: naive =      0 
+Bin  13: naive =      0 
+Bin  14: naive =      0 
+Bin  15: naive =      0 
+Bin  16: naive =      0 
+Bin  17: naive =      0 
+Bin  18: naive =      0 
+Bin  19: naive =      0 
+Bin  20: naive =      0 
+Bin  21: naive =      0 
+Bin  22: naive =      0 
+Bin  23: naive =      0 
+Bin  24: naive =      0 
+Bin  25: naive =      0 
+Bin  26: naive =      0 
+Bin  27: naive =      0 
+Bin  28: naive =      0 
+Bin  29: naive =      0 
+Bin  30: naive =      0 
+Bin  31: naive =      0 
+Bin  32: naive =      0 
+Bin  33: naive =      0 
+Bin  34: naive =      3 
+Bin  35: naive =      1 
+Bin  36: naive =     15 
+Bin  37: naive =     29 
+Bin  38: naive =     60 
+Bin  39: naive =     73 
+Bin  40: naive =    153 
+Bin  41: naive =    193 
+Bin  42: naive =    320 
+Bin  43: naive =    383 
+Bin  44: naive =    537 
+Bin  45: naive =    706 
+Bin  46: naive =    930 
+Bin  47: naive =   1120 
+Bin  48: naive =   1377 
+Bin  49: naive =   1683 
+Bin  50: naive =   1896 
+Bin  51: naive =   2250 
+Bin  52: naive =   2375 
+Bin  53: naive =   2468 
+Bin  54: naive =   2523 
+Bin  55: naive =   2567 
+Bin  56: naive =   2556 
+Bin  57: naive =   2448 
+Bin  58: naive =   2267 
+Bin  59: naive =   2095 
+Bin  60: naive =   2026 
+Bin  61: naive =   1836 
+Bin  62: naive =   1595 
+Bin  63: naive =   1434 
+Bin  64: naive =   1303 
+Bin  65: naive =   1240 
+Bin  66: naive =   1124 
+Bin  67: naive =   1050 
+Bin  68: naive =    943 
+Bin  69: naive =    901 
+Bin  70: naive =    868 
+Bin  71: naive =    841 
+Bin  72: naive =    851 
+Bin  73: naive =    849 
+Bin  74: naive =    826 
+Bin  75: naive =    823 
+Bin  76: naive =    795 
+Bin  77: naive =    907 
+Bin  78: naive =    885 
+Bin  79: naive =    882 
+Bin  80: naive =    917 
+Bin  81: naive =   1008 
+Bin  82: naive =    982 
+Bin  83: naive =    988 
+Bin  84: naive =   1028 
+Bin  85: naive =    980 
+Bin  86: naive =    996 
+Bin  87: naive =    991 
+Bin  88: naive =   1020 
+Bin  89: naive =   1077 
+Bin  90: naive =   1048 
+Bin  91: naive =   1146 
+Bin  92: naive =   1174 
+Bin  93: naive =   1139 
+Bin  94: naive =   1259 
+Bin  95: naive =   1288 
+Bin  96: naive =   1298 
+Bin  97: naive =   1341 
+Bin  98: naive =   1348 
+Bin  99: naive =   1565 
+Bin 100: naive =   1630 
+Bin 101: naive =   1836 
+Bin 102: naive =   2072 
+Bin 103: naive =   2248 
+Bin 104: naive =   2235 
+Bin 105: naive =   2287 
+Bin 106: naive =   2126 
+Bin 107: naive =   1991 
+Bin 108: naive =   1853 
+Bin 109: naive =   1660 
+Bin 110: naive =   1595 
+Bin 111: naive =   1490 
+Bin 112: naive =   1419 
+Bin 113: naive =   1432 
+Bin 114: naive =   1410 
+Bin 115: naive =   1482 
+Bin 116: naive =   1513 
+Bin 117: naive =   1484 
+Bin 118: naive =   1538 
+Bin 119: naive =   1503 
+Bin 120: naive =   1663 
+Bin 121: naive =   1692 
+Bin 122: naive =   1812 
+Bin 123: naive =   1787 
+Bin 124: naive =   1954 
+Bin 125: naive =   2006 
+Bin 126: naive =   2038 
+Bin 127: naive =   2309 
+Bin 128: naive =   2595 
+Bin 129: naive =   2650 
+Bin 130: naive =   2759 
+Bin 131: naive =   2776 
+Bin 132: naive =   2712 
+Bin 133: naive =   2484 
+Bin 134: naive =   2264 
+Bin 135: naive =   2143 
+Bin 136: naive =   2057 
+Bin 137: naive =   2022 
+Bin 138: naive =   2225 
+Bin 139: naive =   2209 
+Bin 140: naive =   2438 
+Bin 141: naive =   2633 
+Bin 142: naive =   2619 
+Bin 143: naive =   2742 
+Bin 144: naive =   2672 
+Bin 145: naive =   2752 
+Bin 146: naive =   2611 
+Bin 147: naive =   2441 
+Bin 148: naive =   2475 
+Bin 149: naive =   2386 
+Bin 150: naive =   2443 
+Bin 151: naive =   2609 
+Bin 152: naive =   2726 
+Bin 153: naive =   2859 
+Bin 154: naive =   2842 
+Bin 155: naive =   2745 
+Bin 156: naive =   2564 
+Bin 157: naive =   2368 
+Bin 158: naive =   2145 
+Bin 159: naive =   1927 
+Bin 160: naive =   1760 
+Bin 161: naive =   1655 
+Bin 162: naive =   1529 
+Bin 163: naive =   1401 
+Bin 164: naive =   1303 
+Bin 165: naive =   1317 
+Bin 166: naive =   1280 
+Bin 167: naive =   1267 
+Bin 168: naive =   1157 
+Bin 169: naive =   1223 
+Bin 170: naive =   1266 
+Bin 171: naive =   1282 
+Bin 172: naive =   1294 
+Bin 173: naive =   1251 
+Bin 174: naive =   1188 
+Bin 175: naive =   1191 
+Bin 176: naive =   1125 
+Bin 177: naive =   1057 
+Bin 178: naive =    986 
+Bin 179: naive =    878 
+Bin 180: naive =    747 
+Bin 181: naive =    692 
+Bin 182: naive =    669 
+Bin 183: naive =    644 
+Bin 184: naive =    681 
+Bin 185: naive =    635 
+Bin 186: naive =    604 
+Bin 187: naive =    664 
+Bin 188: naive =    720 
+Bin 189: naive =    761 
+Bin 190: naive =    785 
+Bin 191: naive =    865 
+Bin 192: naive =    860 
+Bin 193: naive =    904 
+Bin 194: naive =    936 
+Bin 195: naive =    929 
+Bin 196: naive =    873 
+Bin 197: naive =    926 
+Bin 198: naive =    883 
+Bin 199: naive =    794 
+Bin 200: naive =    805 
+Bin 201: naive =    795 
+Bin 202: naive =    791 
+Bin 203: naive =    807 
+Bin 204: naive =    829 
+Bin 205: naive =    910 
+Bin 206: naive =    990 
+Bin 207: naive =    999 
+Bin 208: naive =    987 
+Bin 209: naive =    967 
+Bin 210: naive =    918 
+Bin 211: naive =    863 
+Bin 212: naive =    779 
+Bin 213: naive =    686 
+Bin 214: naive =    553 
+Bin 215: naive =    443 
+Bin 216: naive =    361 
+Bin 217: naive =    360 
+Bin 218: naive =    321 
+Bin 219: naive =    285 
+Bin 220: naive =    216 
+Bin 221: naive =    206 
+Bin 222: naive =    186 
+Bin 223: naive =    151 
+Bin 224: naive =     99 
+Bin 225: naive =     82 
+Bin 226: naive =     46 
+Bin 227: naive =     57 
+Bin 228: naive =     43 
+Bin 229: naive =     19 
+Bin 230: naive =     17 
+Bin 231: naive =     13 
+Bin 232: naive =      3 
+Bin 233: naive =      9 
+Bin 234: naive =      2 
+Bin 235: naive =      0 
+Bin 236: naive =      1 
+Bin 237: naive =      0 
+Bin 238: naive =      1 
+Bin 239: naive =      0 
+Bin 240: naive =      0 
+Bin 241: naive =      0 
+Bin 242: naive =      0 
+Bin 243: naive =      1 
+Bin 244: naive =      1 
+Bin 245: naive =      1 
+Bin 246: naive =      0 
+Bin 247: naive =      1 
+Bin 248: naive =      0 
+Bin 249: naive =      0 
+Bin 250: naive =      0 
+Bin 251: naive =      0 
+Bin 252: naive =      0 
+Bin 253: naive =      0 
+Bin 254: naive =      0 
+Bin 255: naive =      0 
+breaking loop due to: exiting with last active thread context.
+Ticks: 113456942000
+Exiting because  exiting with last active thread context
+=== Kernel=naive, CU=8 ===
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.2
+gem5 compiled May 14 2025 10:23:50
+gem5 started May 25 2026 21:09:18
+gem5 executing on wn102.arnes.si, pid 1170217
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/VEGA_X86/gem5.opt --outdir=results_task1/naive/cu_8 /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/configs/example/apu_se.py -n 3 --num-compute-units 8 --gfx-version=gfx902 -c ./histogram/bin/histogram_naive.bin
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  2 Num scalar caches =  2 Num CU =  8
+incrementing idx on  4
+incrementing idx on  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:704: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall get_mempolicy(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Loaded image 512x512
+src/gpu-compute/gpu_compute_driver.cc:675: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mbind(...)
+src/gpu-compute/gpu_compute_driver.cc:283: warn: unimplemented ioctl: AMDKFD_IOC_SET_MEMORY_POLICY
+src/sim/syscall_emul.hh:2033: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/gpu-compute/gpu_compute_driver.cc:144: warn: Unrecognized kfd mmap type 0
+src/gpu-compute/gpu_compute_driver.cc:852: warn: unimplemented ioctl: AMDKFD_IOC_MAP_MEMORY_TO_GPU
+src/gpu-compute/gpu_compute_driver.cc:441: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:585: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:595: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_command_processor.cc:624: warn: Ignoring vendor packet
+GPU Kernel Completed dump and reset
+src/sim/simulate.cc:199: info: Entering event queue @ 108298620000.  Starting simulation...
+Naive histogram computed.
+Bin   0: naive =      0 
+Bin   1: naive =      0 
+Bin   2: naive =      0 
+Bin   3: naive =      0 
+Bin   4: naive =      0 
+Bin   5: naive =      0 
+Bin   6: naive =      0 
+Bin   7: naive =      0 
+Bin   8: naive =      0 
+Bin   9: naive =      0 
+Bin  10: naive =      0 
+Bin  11: naive =      0 
+Bin  12: naive =      0 
+Bin  13: naive =      0 
+Bin  14: naive =      0 
+Bin  15: naive =      0 
+Bin  16: naive =      0 
+Bin  17: naive =      0 
+Bin  18: naive =      0 
+Bin  19: naive =      0 
+Bin  20: naive =      0 
+Bin  21: naive =      0 
+Bin  22: naive =      0 
+Bin  23: naive =      0 
+Bin  24: naive =      0 
+Bin  25: naive =      0 
+Bin  26: naive =      0 
+Bin  27: naive =      0 
+Bin  28: naive =      0 
+Bin  29: naive =      0 
+Bin  30: naive =      0 
+Bin  31: naive =      0 
+Bin  32: naive =      0 
+Bin  33: naive =      0 
+Bin  34: naive =      3 
+Bin  35: naive =      1 
+Bin  36: naive =     15 
+Bin  37: naive =     29 
+Bin  38: naive =     60 
+Bin  39: naive =     73 
+Bin  40: naive =    153 
+Bin  41: naive =    193 
+Bin  42: naive =    320 
+Bin  43: naive =    383 
+Bin  44: naive =    537 
+Bin  45: naive =    706 
+Bin  46: naive =    930 
+Bin  47: naive =   1120 
+Bin  48: naive =   1377 
+Bin  49: naive =   1683 
+Bin  50: naive =   1896 
+Bin  51: naive =   2250 
+Bin  52: naive =   2375 
+Bin  53: naive =   2468 
+Bin  54: naive =   2523 
+Bin  55: naive =   2567 
+Bin  56: naive =   2556 
+Bin  57: naive =   2448 
+Bin  58: naive =   2267 
+Bin  59: naive =   2095 
+Bin  60: naive =   2026 
+Bin  61: naive =   1836 
+Bin  62: naive =   1595 
+Bin  63: naive =   1434 
+Bin  64: naive =   1303 
+Bin  65: naive =   1240 
+Bin  66: naive =   1124 
+Bin  67: naive =   1050 
+Bin  68: naive =    943 
+Bin  69: naive =    901 
+Bin  70: naive =    868 
+Bin  71: naive =    841 
+Bin  72: naive =    851 
+Bin  73: naive =    849 
+Bin  74: naive =    826 
+Bin  75: naive =    823 
+Bin  76: naive =    795 
+Bin  77: naive =    907 
+Bin  78: naive =    885 
+Bin  79: naive =    882 
+Bin  80: naive =    917 
+Bin  81: naive =   1008 
+Bin  82: naive =    982 
+Bin  83: naive =    988 
+Bin  84: naive =   1028 
+Bin  85: naive =    980 
+Bin  86: naive =    996 
+Bin  87: naive =    991 
+Bin  88: naive =   1020 
+Bin  89: naive =   1077 
+Bin  90: naive =   1048 
+Bin  91: naive =   1146 
+Bin  92: naive =   1174 
+Bin  93: naive =   1139 
+Bin  94: naive =   1259 
+Bin  95: naive =   1288 
+Bin  96: naive =   1298 
+Bin  97: naive =   1341 
+Bin  98: naive =   1348 
+Bin  99: naive =   1565 
+Bin 100: naive =   1630 
+Bin 101: naive =   1836 
+Bin 102: naive =   2072 
+Bin 103: naive =   2248 
+Bin 104: naive =   2235 
+Bin 105: naive =   2287 
+Bin 106: naive =   2126 
+Bin 107: naive =   1991 
+Bin 108: naive =   1853 
+Bin 109: naive =   1660 
+Bin 110: naive =   1595 
+Bin 111: naive =   1490 
+Bin 112: naive =   1419 
+Bin 113: naive =   1432 
+Bin 114: naive =   1410 
+Bin 115: naive =   1482 
+Bin 116: naive =   1513 
+Bin 117: naive =   1484 
+Bin 118: naive =   1538 
+Bin 119: naive =   1503 
+Bin 120: naive =   1663 
+Bin 121: naive =   1692 
+Bin 122: naive =   1812 
+Bin 123: naive =   1787 
+Bin 124: naive =   1954 
+Bin 125: naive =   2006 
+Bin 126: naive =   2038 
+Bin 127: naive =   2309 
+Bin 128: naive =   2595 
+Bin 129: naive =   2650 
+Bin 130: naive =   2759 
+Bin 131: naive =   2776 
+Bin 132: naive =   2712 
+Bin 133: naive =   2484 
+Bin 134: naive =   2264 
+Bin 135: naive =   2143 
+Bin 136: naive =   2057 
+Bin 137: naive =   2022 
+Bin 138: naive =   2225 
+Bin 139: naive =   2209 
+Bin 140: naive =   2438 
+Bin 141: naive =   2633 
+Bin 142: naive =   2619 
+Bin 143: naive =   2742 
+Bin 144: naive =   2672 
+Bin 145: naive =   2752 
+Bin 146: naive =   2611 
+Bin 147: naive =   2441 
+Bin 148: naive =   2475 
+Bin 149: naive =   2386 
+Bin 150: naive =   2443 
+Bin 151: naive =   2609 
+Bin 152: naive =   2726 
+Bin 153: naive =   2859 
+Bin 154: naive =   2842 
+Bin 155: naive =   2745 
+Bin 156: naive =   2564 
+Bin 157: naive =   2368 
+Bin 158: naive =   2145 
+Bin 159: naive =   1927 
+Bin 160: naive =   1760 
+Bin 161: naive =   1655 
+Bin 162: naive =   1529 
+Bin 163: naive =   1401 
+Bin 164: naive =   1303 
+Bin 165: naive =   1317 
+Bin 166: naive =   1280 
+Bin 167: naive =   1267 
+Bin 168: naive =   1157 
+Bin 169: naive =   1223 
+Bin 170: naive =   1266 
+Bin 171: naive =   1282 
+Bin 172: naive =   1294 
+Bin 173: naive =   1251 
+Bin 174: naive =   1188 
+Bin 175: naive =   1191 
+Bin 176: naive =   1125 
+Bin 177: naive =   1057 
+Bin 178: naive =    986 
+Bin 179: naive =    878 
+Bin 180: naive =    747 
+Bin 181: naive =    692 
+Bin 182: naive =    669 
+Bin 183: naive =    644 
+Bin 184: naive =    681 
+Bin 185: naive =    635 
+Bin 186: naive =    604 
+Bin 187: naive =    664 
+Bin 188: naive =    720 
+Bin 189: naive =    761 
+Bin 190: naive =    785 
+Bin 191: naive =    865 
+Bin 192: naive =    860 
+Bin 193: naive =    904 
+Bin 194: naive =    936 
+Bin 195: naive =    929 
+Bin 196: naive =    873 
+Bin 197: naive =    926 
+Bin 198: naive =    883 
+Bin 199: naive =    794 
+Bin 200: naive =    805 
+Bin 201: naive =    795 
+Bin 202: naive =    791 
+Bin 203: naive =    807 
+Bin 204: naive =    829 
+Bin 205: naive =    910 
+Bin 206: naive =    990 
+Bin 207: naive =    999 
+Bin 208: naive =    987 
+Bin 209: naive =    967 
+Bin 210: naive =    918 
+Bin 211: naive =    863 
+Bin 212: naive =    779 
+Bin 213: naive =    686 
+Bin 214: naive =    553 
+Bin 215: naive =    443 
+Bin 216: naive =    361 
+Bin 217: naive =    360 
+Bin 218: naive =    321 
+Bin 219: naive =    285 
+Bin 220: naive =    216 
+Bin 221: naive =    206 
+Bin 222: naive =    186 
+Bin 223: naive =    151 
+Bin 224: naive =     99 
+Bin 225: naive =     82 
+Bin 226: naive =     46 
+Bin 227: naive =     57 
+Bin 228: naive =     43 
+Bin 229: naive =     19 
+Bin 230: naive =     17 
+Bin 231: naive =     13 
+Bin 232: naive =      3 
+Bin 233: naive =      9 
+Bin 234: naive =      2 
+Bin 235: naive =      0 
+Bin 236: naive =      1 
+Bin 237: naive =      0 
+Bin 238: naive =      1 
+Bin 239: naive =      0 
+Bin 240: naive =      0 
+Bin 241: naive =      0 
+Bin 242: naive =      0 
+Bin 243: naive =      1 
+Bin 244: naive =      1 
+Bin 245: naive =      1 
+Bin 246: naive =      0 
+Bin 247: naive =      1 
+Bin 248: naive =      0 
+Bin 249: naive =      0 
+Bin 250: naive =      0 
+Bin 251: naive =      0 
+Bin 252: naive =      0 
+Bin 253: naive =      0 
+Bin 254: naive =      0 
+Bin 255: naive =      0 
+breaking loop due to: exiting with last active thread context.
+Ticks: 113437040000
+Exiting because  exiting with last active thread context
+=== Kernel=opt, CU=2 ===
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.2
+gem5 compiled May 14 2025 10:23:50
+gem5 started May 25 2026 21:12:45
+gem5 executing on wn102.arnes.si, pid 1170770
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/VEGA_X86/gem5.opt --outdir=results_task1/opt/cu_2 /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/configs/example/apu_se.py -n 3 --num-compute-units 2 --gfx-version=gfx902 -c ./histogram/bin/histogram_opt.bin
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  1 Num scalar caches =  1 Num CU =  2
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:704: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall get_mempolicy(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Loaded image 512x512
+src/gpu-compute/gpu_compute_driver.cc:675: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mbind(...)
+src/gpu-compute/gpu_compute_driver.cc:283: warn: unimplemented ioctl: AMDKFD_IOC_SET_MEMORY_POLICY
+src/sim/syscall_emul.hh:2033: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/gpu-compute/gpu_compute_driver.cc:144: warn: Unrecognized kfd mmap type 0
+src/gpu-compute/gpu_compute_driver.cc:852: warn: unimplemented ioctl: AMDKFD_IOC_MAP_MEMORY_TO_GPU
+src/gpu-compute/gpu_compute_driver.cc:441: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:585: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:595: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_command_processor.cc:624: warn: Ignoring vendor packet
+GPU Kernel Completed dump and reset
+src/sim/simulate.cc:199: info: Entering event queue @ 107664167000.  Starting simulation...
+Optimized histogram computed.
+Bin   0: optimized =      0
+Bin   1: optimized =      0
+Bin   2: optimized =      0
+Bin   3: optimized =      0
+Bin   4: optimized =      0
+Bin   5: optimized =      0
+Bin   6: optimized =      0
+Bin   7: optimized =      0
+Bin   8: optimized =      0
+Bin   9: optimized =      0
+Bin  10: optimized =      0
+Bin  11: optimized =      0
+Bin  12: optimized =      0
+Bin  13: optimized =      0
+Bin  14: optimized =      0
+Bin  15: optimized =      0
+Bin  16: optimized =      0
+Bin  17: optimized =      0
+Bin  18: optimized =      0
+Bin  19: optimized =      0
+Bin  20: optimized =      0
+Bin  21: optimized =      0
+Bin  22: optimized =      0
+Bin  23: optimized =      0
+Bin  24: optimized =      0
+Bin  25: optimized =      0
+Bin  26: optimized =      0
+Bin  27: optimized =      0
+Bin  28: optimized =      0
+Bin  29: optimized =      0
+Bin  30: optimized =      0
+Bin  31: optimized =      0
+Bin  32: optimized =      0
+Bin  33: optimized =      0
+Bin  34: optimized =      3
+Bin  35: optimized =      1
+Bin  36: optimized =     15
+Bin  37: optimized =     29
+Bin  38: optimized =     60
+Bin  39: optimized =     73
+Bin  40: optimized =    153
+Bin  41: optimized =    193
+Bin  42: optimized =    320
+Bin  43: optimized =    383
+Bin  44: optimized =    537
+Bin  45: optimized =    706
+Bin  46: optimized =    930
+Bin  47: optimized =   1120
+Bin  48: optimized =   1377
+Bin  49: optimized =   1683
+Bin  50: optimized =   1896
+Bin  51: optimized =   2250
+Bin  52: optimized =   2375
+Bin  53: optimized =   2468
+Bin  54: optimized =   2523
+Bin  55: optimized =   2567
+Bin  56: optimized =   2556
+Bin  57: optimized =   2448
+Bin  58: optimized =   2267
+Bin  59: optimized =   2095
+Bin  60: optimized =   2026
+Bin  61: optimized =   1836
+Bin  62: optimized =   1595
+Bin  63: optimized =   1434
+Bin  64: optimized =   1303
+Bin  65: optimized =   1240
+Bin  66: optimized =   1124
+Bin  67: optimized =   1050
+Bin  68: optimized =    943
+Bin  69: optimized =    901
+Bin  70: optimized =    868
+Bin  71: optimized =    841
+Bin  72: optimized =    851
+Bin  73: optimized =    849
+Bin  74: optimized =    826
+Bin  75: optimized =    823
+Bin  76: optimized =    795
+Bin  77: optimized =    907
+Bin  78: optimized =    885
+Bin  79: optimized =    882
+Bin  80: optimized =    917
+Bin  81: optimized =   1008
+Bin  82: optimized =    982
+Bin  83: optimized =    988
+Bin  84: optimized =   1028
+Bin  85: optimized =    980
+Bin  86: optimized =    996
+Bin  87: optimized =    991
+Bin  88: optimized =   1020
+Bin  89: optimized =   1077
+Bin  90: optimized =   1048
+Bin  91: optimized =   1146
+Bin  92: optimized =   1174
+Bin  93: optimized =   1139
+Bin  94: optimized =   1259
+Bin  95: optimized =   1288
+Bin  96: optimized =   1298
+Bin  97: optimized =   1341
+Bin  98: optimized =   1348
+Bin  99: optimized =   1565
+Bin 100: optimized =   1630
+Bin 101: optimized =   1836
+Bin 102: optimized =   2072
+Bin 103: optimized =   2248
+Bin 104: optimized =   2235
+Bin 105: optimized =   2287
+Bin 106: optimized =   2126
+Bin 107: optimized =   1991
+Bin 108: optimized =   1853
+Bin 109: optimized =   1660
+Bin 110: optimized =   1595
+Bin 111: optimized =   1490
+Bin 112: optimized =   1419
+Bin 113: optimized =   1432
+Bin 114: optimized =   1410
+Bin 115: optimized =   1482
+Bin 116: optimized =   1513
+Bin 117: optimized =   1484
+Bin 118: optimized =   1538
+Bin 119: optimized =   1503
+Bin 120: optimized =   1663
+Bin 121: optimized =   1692
+Bin 122: optimized =   1812
+Bin 123: optimized =   1787
+Bin 124: optimized =   1954
+Bin 125: optimized =   2006
+Bin 126: optimized =   2038
+Bin 127: optimized =   2309
+Bin 128: optimized =   2595
+Bin 129: optimized =   2650
+Bin 130: optimized =   2759
+Bin 131: optimized =   2776
+Bin 132: optimized =   2712
+Bin 133: optimized =   2484
+Bin 134: optimized =   2264
+Bin 135: optimized =   2143
+Bin 136: optimized =   2057
+Bin 137: optimized =   2022
+Bin 138: optimized =   2225
+Bin 139: optimized =   2209
+Bin 140: optimized =   2438
+Bin 141: optimized =   2633
+Bin 142: optimized =   2619
+Bin 143: optimized =   2742
+Bin 144: optimized =   2672
+Bin 145: optimized =   2752
+Bin 146: optimized =   2611
+Bin 147: optimized =   2441
+Bin 148: optimized =   2475
+Bin 149: optimized =   2386
+Bin 150: optimized =   2443
+Bin 151: optimized =   2609
+Bin 152: optimized =   2726
+Bin 153: optimized =   2859
+Bin 154: optimized =   2842
+Bin 155: optimized =   2745
+Bin 156: optimized =   2564
+Bin 157: optimized =   2368
+Bin 158: optimized =   2145
+Bin 159: optimized =   1927
+Bin 160: optimized =   1760
+Bin 161: optimized =   1655
+Bin 162: optimized =   1529
+Bin 163: optimized =   1401
+Bin 164: optimized =   1303
+Bin 165: optimized =   1317
+Bin 166: optimized =   1280
+Bin 167: optimized =   1267
+Bin 168: optimized =   1157
+Bin 169: optimized =   1223
+Bin 170: optimized =   1266
+Bin 171: optimized =   1282
+Bin 172: optimized =   1294
+Bin 173: optimized =   1251
+Bin 174: optimized =   1188
+Bin 175: optimized =   1191
+Bin 176: optimized =   1125
+Bin 177: optimized =   1057
+Bin 178: optimized =    986
+Bin 179: optimized =    878
+Bin 180: optimized =    747
+Bin 181: optimized =    692
+Bin 182: optimized =    669
+Bin 183: optimized =    644
+Bin 184: optimized =    681
+Bin 185: optimized =    635
+Bin 186: optimized =    604
+Bin 187: optimized =    664
+Bin 188: optimized =    720
+Bin 189: optimized =    761
+Bin 190: optimized =    785
+Bin 191: optimized =    865
+Bin 192: optimized =    860
+Bin 193: optimized =    904
+Bin 194: optimized =    936
+Bin 195: optimized =    929
+Bin 196: optimized =    873
+Bin 197: optimized =    926
+Bin 198: optimized =    883
+Bin 199: optimized =    794
+Bin 200: optimized =    805
+Bin 201: optimized =    795
+Bin 202: optimized =    791
+Bin 203: optimized =    807
+Bin 204: optimized =    829
+Bin 205: optimized =    910
+Bin 206: optimized =    990
+Bin 207: optimized =    999
+Bin 208: optimized =    987
+Bin 209: optimized =    967
+Bin 210: optimized =    918
+Bin 211: optimized =    863
+Bin 212: optimized =    779
+Bin 213: optimized =    686
+Bin 214: optimized =    553
+Bin 215: optimized =    443
+Bin 216: optimized =    361
+Bin 217: optimized =    360
+Bin 218: optimized =    321
+Bin 219: optimized =    285
+Bin 220: optimized =    216
+Bin 221: optimized =    206
+Bin 222: optimized =    186
+Bin 223: optimized =    151
+Bin 224: optimized =     99
+Bin 225: optimized =     82
+Bin 226: optimized =     46
+Bin 227: optimized =     57
+Bin 228: optimized =     43
+Bin 229: optimized =     19
+Bin 230: optimized =     17
+Bin 231: optimized =     13
+Bin 232: optimized =      3
+Bin 233: optimized =      9
+Bin 234: optimized =      2
+Bin 235: optimized =      0
+Bin 236: optimized =      1
+Bin 237: optimized =      0
+Bin 238: optimized =      1
+Bin 239: optimized =      0
+Bin 240: optimized =      0
+Bin 241: optimized =      0
+Bin 242: optimized =      0
+Bin 243: optimized =      1
+Bin 244: optimized =      1
+Bin 245: optimized =      1
+Bin 246: optimized =      0
+Bin 247: optimized =      1
+Bin 248: optimized =      0
+Bin 249: optimized =      0
+Bin 250: optimized =      0
+Bin 251: optimized =      0
+Bin 252: optimized =      0
+Bin 253: optimized =      0
+Bin 254: optimized =      0
+Bin 255: optimized =      0
+breaking loop due to: exiting with last active thread context.
+Ticks: 112792368000
+Exiting because  exiting with last active thread context
+=== Kernel=opt, CU=4 ===
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.2
+gem5 compiled May 14 2025 10:23:50
+gem5 started May 25 2026 21:15:39
+gem5 executing on wn102.arnes.si, pid 1171874
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/VEGA_X86/gem5.opt --outdir=results_task1/opt/cu_4 /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/configs/example/apu_se.py -n 3 --num-compute-units 4 --gfx-version=gfx902 -c ./histogram/bin/histogram_opt.bin
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  1 Num scalar caches =  1 Num CU =  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:704: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall get_mempolicy(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Loaded image 512x512
+src/gpu-compute/gpu_compute_driver.cc:675: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mbind(...)
+src/gpu-compute/gpu_compute_driver.cc:283: warn: unimplemented ioctl: AMDKFD_IOC_SET_MEMORY_POLICY
+src/sim/syscall_emul.hh:2033: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/gpu-compute/gpu_compute_driver.cc:144: warn: Unrecognized kfd mmap type 0
+src/gpu-compute/gpu_compute_driver.cc:852: warn: unimplemented ioctl: AMDKFD_IOC_MAP_MEMORY_TO_GPU
+src/gpu-compute/gpu_compute_driver.cc:441: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:585: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:595: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_command_processor.cc:624: warn: Ignoring vendor packet
+GPU Kernel Completed dump and reset
+src/sim/simulate.cc:199: info: Entering event queue @ 107620524000.  Starting simulation...
+Optimized histogram computed.
+Bin   0: optimized =      0
+Bin   1: optimized =      0
+Bin   2: optimized =      0
+Bin   3: optimized =      0
+Bin   4: optimized =      0
+Bin   5: optimized =      0
+Bin   6: optimized =      0
+Bin   7: optimized =      0
+Bin   8: optimized =      0
+Bin   9: optimized =      0
+Bin  10: optimized =      0
+Bin  11: optimized =      0
+Bin  12: optimized =      0
+Bin  13: optimized =      0
+Bin  14: optimized =      0
+Bin  15: optimized =      0
+Bin  16: optimized =      0
+Bin  17: optimized =      0
+Bin  18: optimized =      0
+Bin  19: optimized =      0
+Bin  20: optimized =      0
+Bin  21: optimized =      0
+Bin  22: optimized =      0
+Bin  23: optimized =      0
+Bin  24: optimized =      0
+Bin  25: optimized =      0
+Bin  26: optimized =      0
+Bin  27: optimized =      0
+Bin  28: optimized =      0
+Bin  29: optimized =      0
+Bin  30: optimized =      0
+Bin  31: optimized =      0
+Bin  32: optimized =      0
+Bin  33: optimized =      0
+Bin  34: optimized =      3
+Bin  35: optimized =      1
+Bin  36: optimized =     15
+Bin  37: optimized =     29
+Bin  38: optimized =     60
+Bin  39: optimized =     73
+Bin  40: optimized =    153
+Bin  41: optimized =    193
+Bin  42: optimized =    320
+Bin  43: optimized =    383
+Bin  44: optimized =    537
+Bin  45: optimized =    706
+Bin  46: optimized =    930
+Bin  47: optimized =   1120
+Bin  48: optimized =   1377
+Bin  49: optimized =   1683
+Bin  50: optimized =   1896
+Bin  51: optimized =   2250
+Bin  52: optimized =   2375
+Bin  53: optimized =   2468
+Bin  54: optimized =   2523
+Bin  55: optimized =   2567
+Bin  56: optimized =   2556
+Bin  57: optimized =   2448
+Bin  58: optimized =   2267
+Bin  59: optimized =   2095
+Bin  60: optimized =   2026
+Bin  61: optimized =   1836
+Bin  62: optimized =   1595
+Bin  63: optimized =   1434
+Bin  64: optimized =   1303
+Bin  65: optimized =   1240
+Bin  66: optimized =   1124
+Bin  67: optimized =   1050
+Bin  68: optimized =    943
+Bin  69: optimized =    901
+Bin  70: optimized =    868
+Bin  71: optimized =    841
+Bin  72: optimized =    851
+Bin  73: optimized =    849
+Bin  74: optimized =    826
+Bin  75: optimized =    823
+Bin  76: optimized =    795
+Bin  77: optimized =    907
+Bin  78: optimized =    885
+Bin  79: optimized =    882
+Bin  80: optimized =    917
+Bin  81: optimized =   1008
+Bin  82: optimized =    982
+Bin  83: optimized =    988
+Bin  84: optimized =   1028
+Bin  85: optimized =    980
+Bin  86: optimized =    996
+Bin  87: optimized =    991
+Bin  88: optimized =   1020
+Bin  89: optimized =   1077
+Bin  90: optimized =   1048
+Bin  91: optimized =   1146
+Bin  92: optimized =   1174
+Bin  93: optimized =   1139
+Bin  94: optimized =   1259
+Bin  95: optimized =   1288
+Bin  96: optimized =   1298
+Bin  97: optimized =   1341
+Bin  98: optimized =   1348
+Bin  99: optimized =   1565
+Bin 100: optimized =   1630
+Bin 101: optimized =   1836
+Bin 102: optimized =   2072
+Bin 103: optimized =   2248
+Bin 104: optimized =   2235
+Bin 105: optimized =   2287
+Bin 106: optimized =   2126
+Bin 107: optimized =   1991
+Bin 108: optimized =   1853
+Bin 109: optimized =   1660
+Bin 110: optimized =   1595
+Bin 111: optimized =   1490
+Bin 112: optimized =   1419
+Bin 113: optimized =   1432
+Bin 114: optimized =   1410
+Bin 115: optimized =   1482
+Bin 116: optimized =   1513
+Bin 117: optimized =   1484
+Bin 118: optimized =   1538
+Bin 119: optimized =   1503
+Bin 120: optimized =   1663
+Bin 121: optimized =   1692
+Bin 122: optimized =   1812
+Bin 123: optimized =   1787
+Bin 124: optimized =   1954
+Bin 125: optimized =   2006
+Bin 126: optimized =   2038
+Bin 127: optimized =   2309
+Bin 128: optimized =   2595
+Bin 129: optimized =   2650
+Bin 130: optimized =   2759
+Bin 131: optimized =   2776
+Bin 132: optimized =   2712
+Bin 133: optimized =   2484
+Bin 134: optimized =   2264
+Bin 135: optimized =   2143
+Bin 136: optimized =   2057
+Bin 137: optimized =   2022
+Bin 138: optimized =   2225
+Bin 139: optimized =   2209
+Bin 140: optimized =   2438
+Bin 141: optimized =   2633
+Bin 142: optimized =   2619
+Bin 143: optimized =   2742
+Bin 144: optimized =   2672
+Bin 145: optimized =   2752
+Bin 146: optimized =   2611
+Bin 147: optimized =   2441
+Bin 148: optimized =   2475
+Bin 149: optimized =   2386
+Bin 150: optimized =   2443
+Bin 151: optimized =   2609
+Bin 152: optimized =   2726
+Bin 153: optimized =   2859
+Bin 154: optimized =   2842
+Bin 155: optimized =   2745
+Bin 156: optimized =   2564
+Bin 157: optimized =   2368
+Bin 158: optimized =   2145
+Bin 159: optimized =   1927
+Bin 160: optimized =   1760
+Bin 161: optimized =   1655
+Bin 162: optimized =   1529
+Bin 163: optimized =   1401
+Bin 164: optimized =   1303
+Bin 165: optimized =   1317
+Bin 166: optimized =   1280
+Bin 167: optimized =   1267
+Bin 168: optimized =   1157
+Bin 169: optimized =   1223
+Bin 170: optimized =   1266
+Bin 171: optimized =   1282
+Bin 172: optimized =   1294
+Bin 173: optimized =   1251
+Bin 174: optimized =   1188
+Bin 175: optimized =   1191
+Bin 176: optimized =   1125
+Bin 177: optimized =   1057
+Bin 178: optimized =    986
+Bin 179: optimized =    878
+Bin 180: optimized =    747
+Bin 181: optimized =    692
+Bin 182: optimized =    669
+Bin 183: optimized =    644
+Bin 184: optimized =    681
+Bin 185: optimized =    635
+Bin 186: optimized =    604
+Bin 187: optimized =    664
+Bin 188: optimized =    720
+Bin 189: optimized =    761
+Bin 190: optimized =    785
+Bin 191: optimized =    865
+Bin 192: optimized =    860
+Bin 193: optimized =    904
+Bin 194: optimized =    936
+Bin 195: optimized =    929
+Bin 196: optimized =    873
+Bin 197: optimized =    926
+Bin 198: optimized =    883
+Bin 199: optimized =    794
+Bin 200: optimized =    805
+Bin 201: optimized =    795
+Bin 202: optimized =    791
+Bin 203: optimized =    807
+Bin 204: optimized =    829
+Bin 205: optimized =    910
+Bin 206: optimized =    990
+Bin 207: optimized =    999
+Bin 208: optimized =    987
+Bin 209: optimized =    967
+Bin 210: optimized =    918
+Bin 211: optimized =    863
+Bin 212: optimized =    779
+Bin 213: optimized =    686
+Bin 214: optimized =    553
+Bin 215: optimized =    443
+Bin 216: optimized =    361
+Bin 217: optimized =    360
+Bin 218: optimized =    321
+Bin 219: optimized =    285
+Bin 220: optimized =    216
+Bin 221: optimized =    206
+Bin 222: optimized =    186
+Bin 223: optimized =    151
+Bin 224: optimized =     99
+Bin 225: optimized =     82
+Bin 226: optimized =     46
+Bin 227: optimized =     57
+Bin 228: optimized =     43
+Bin 229: optimized =     19
+Bin 230: optimized =     17
+Bin 231: optimized =     13
+Bin 232: optimized =      3
+Bin 233: optimized =      9
+Bin 234: optimized =      2
+Bin 235: optimized =      0
+Bin 236: optimized =      1
+Bin 237: optimized =      0
+Bin 238: optimized =      1
+Bin 239: optimized =      0
+Bin 240: optimized =      0
+Bin 241: optimized =      0
+Bin 242: optimized =      0
+Bin 243: optimized =      1
+Bin 244: optimized =      1
+Bin 245: optimized =      1
+Bin 246: optimized =      0
+Bin 247: optimized =      1
+Bin 248: optimized =      0
+Bin 249: optimized =      0
+Bin 250: optimized =      0
+Bin 251: optimized =      0
+Bin 252: optimized =      0
+Bin 253: optimized =      0
+Bin 254: optimized =      0
+Bin 255: optimized =      0
+breaking loop due to: exiting with last active thread context.
+Ticks: 112748752500
+Exiting because  exiting with last active thread context
+=== Kernel=opt, CU=8 ===
+Global frequency set at 1000000000000 ticks per second
+src/mem/dram_interface.cc:690: warn: DRAM device capacity (8192 Mbytes) does not match the address range assigned (512 Mbytes)
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/statistics.hh:279: warn: One of the stats is a legacy stat. Legacy stat is a stat that does not belong to any statistics::Group. Legacy stat is deprecated.
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+Forcing maxCoalescedReqs to 32 (TLB assoc.) 
+src/base/remote_gdb.cc:418: warn: Sockets disabled, not accepting gdb connections
+gem5 Simulator System.  https://www.gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 version 24.1.0.2
+gem5 compiled May 14 2025 10:23:50
+gem5 started May 25 2026 21:18:35
+gem5 executing on wn102.arnes.si, pid 1172577
+command line: /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/build/VEGA_X86/gem5.opt --outdir=results_task1/opt/cu_8 /d/hpc/projects/FRI/GEM5/gem5_workspace/gem5/configs/example/apu_se.py -n 3 --num-compute-units 8 --gfx-version=gfx902 -c ./histogram/bin/histogram_opt.bin
+
+info: Standard input is not a terminal, disabling listeners.
+Num SQC =  2 Num scalar caches =  2 Num CU =  8
+incrementing idx on  4
+incrementing idx on  4
+warn: system.ruby.network adopting orphan SimObject param 'ext_links'
+warn: system.ruby.network adopting orphan SimObject param 'int_links'
+src/sim/simulate.cc:199: info: Entering event queue @ 0.  Starting simulation...
+src/mem/ruby/system/Sequencer.cc:704: warn: Replacement policy updates recently became the responsibility of SLICC state machines. Make sure to setMRU() near callbacks in .sm files!
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/base/loader/symtab.cc:95: warn: Cannot insert a new symbol table due to name collisions. Adding prefix to each symbol's name can resolve this issue.
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigaction(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall rt_sigprocmask(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall get_mempolicy(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+src/sim/mem_state.cc:448: info: Increasing stack size by one page.
+Loaded image 512x512
+src/gpu-compute/gpu_compute_driver.cc:675: warn: unimplemented ioctl: AMDKFD_IOC_ACQUIRE_VM
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mbind(...)
+src/gpu-compute/gpu_compute_driver.cc:283: warn: unimplemented ioctl: AMDKFD_IOC_SET_MEMORY_POLICY
+src/sim/syscall_emul.hh:2033: warn: mmap: writing to shared mmap region is currently unsupported. The write succeeds on the target, but it will not be propagated to the host or shared mappings
+src/gpu-compute/gpu_compute_driver.cc:144: warn: Unrecognized kfd mmap type 0
+src/gpu-compute/gpu_compute_driver.cc:852: warn: unimplemented ioctl: AMDKFD_IOC_MAP_MEMORY_TO_GPU
+src/gpu-compute/gpu_compute_driver.cc:441: warn: Signal events are only supported currently
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/power_state.cc:105: warn: PowerState: Already in the requested power state, request ignored
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/gpu-compute/gpu_compute_driver.cc:585: warn: unimplemented ioctl: AMDKFD_IOC_SET_SCRATCH_BACKING_VA
+src/gpu-compute/gpu_compute_driver.cc:595: warn: unimplemented ioctl: AMDKFD_IOC_SET_TRAP_HANDLER
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall madvise(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall sched_setaffinity(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall set_robust_list(...)
+src/sim/syscall_emul.cc:97: warn: ignoring syscall sched_yield(...)
+      (further warnings will be suppressed)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+src/sim/syscall_emul.cc:86: warn: ignoring syscall mprotect(...)
+build/VEGA_X86/arch/x86/generated/exec-ns.cc.inc:27: warn: instruction 'frndint' unimplemented
+src/gpu-compute/gpu_command_processor.cc:624: warn: Ignoring vendor packet
+GPU Kernel Completed dump and reset
+src/sim/simulate.cc:199: info: Entering event queue @ 107618411000.  Starting simulation...
+Optimized histogram computed.
+Bin   0: optimized =      0
+Bin   1: optimized =      0
+Bin   2: optimized =      0
+Bin   3: optimized =      0
+Bin   4: optimized =      0
+Bin   5: optimized =      0
+Bin   6: optimized =      0
+Bin   7: optimized =      0
+Bin   8: optimized =      0
+Bin   9: optimized =      0
+Bin  10: optimized =      0
+Bin  11: optimized =      0
+Bin  12: optimized =      0
+Bin  13: optimized =      0
+Bin  14: optimized =      0
+Bin  15: optimized =      0
+Bin  16: optimized =      0
+Bin  17: optimized =      0
+Bin  18: optimized =      0
+Bin  19: optimized =      0
+Bin  20: optimized =      0
+Bin  21: optimized =      0
+Bin  22: optimized =      0
+Bin  23: optimized =      0
+Bin  24: optimized =      0
+Bin  25: optimized =      0
+Bin  26: optimized =      0
+Bin  27: optimized =      0
+Bin  28: optimized =      0
+Bin  29: optimized =      0
+Bin  30: optimized =      0
+Bin  31: optimized =      0
+Bin  32: optimized =      0
+Bin  33: optimized =      0
+Bin  34: optimized =      3
+Bin  35: optimized =      1
+Bin  36: optimized =     15
+Bin  37: optimized =     29
+Bin  38: optimized =     60
+Bin  39: optimized =     73
+Bin  40: optimized =    153
+Bin  41: optimized =    193
+Bin  42: optimized =    320
+Bin  43: optimized =    383
+Bin  44: optimized =    537
+Bin  45: optimized =    706
+Bin  46: optimized =    930
+Bin  47: optimized =   1120
+Bin  48: optimized =   1377
+Bin  49: optimized =   1683
+Bin  50: optimized =   1896
+Bin  51: optimized =   2250
+Bin  52: optimized =   2375
+Bin  53: optimized =   2468
+Bin  54: optimized =   2523
+Bin  55: optimized =   2567
+Bin  56: optimized =   2556
+Bin  57: optimized =   2448
+Bin  58: optimized =   2267
+Bin  59: optimized =   2095
+Bin  60: optimized =   2026
+Bin  61: optimized =   1836
+Bin  62: optimized =   1595
+Bin  63: optimized =   1434
+Bin  64: optimized =   1303
+Bin  65: optimized =   1240
+Bin  66: optimized =   1124
+Bin  67: optimized =   1050
+Bin  68: optimized =    943
+Bin  69: optimized =    901
+Bin  70: optimized =    868
+Bin  71: optimized =    841
+Bin  72: optimized =    851
+Bin  73: optimized =    849
+Bin  74: optimized =    826
+Bin  75: optimized =    823
+Bin  76: optimized =    795
+Bin  77: optimized =    907
+Bin  78: optimized =    885
+Bin  79: optimized =    882
+Bin  80: optimized =    917
+Bin  81: optimized =   1008
+Bin  82: optimized =    982
+Bin  83: optimized =    988
+Bin  84: optimized =   1028
+Bin  85: optimized =    980
+Bin  86: optimized =    996
+Bin  87: optimized =    991
+Bin  88: optimized =   1020
+Bin  89: optimized =   1077
+Bin  90: optimized =   1048
+Bin  91: optimized =   1146
+Bin  92: optimized =   1174
+Bin  93: optimized =   1139
+Bin  94: optimized =   1259
+Bin  95: optimized =   1288
+Bin  96: optimized =   1298
+Bin  97: optimized =   1341
+Bin  98: optimized =   1348
+Bin  99: optimized =   1565
+Bin 100: optimized =   1630
+Bin 101: optimized =   1836
+Bin 102: optimized =   2072
+Bin 103: optimized =   2248
+Bin 104: optimized =   2235
+Bin 105: optimized =   2287
+Bin 106: optimized =   2126
+Bin 107: optimized =   1991
+Bin 108: optimized =   1853
+Bin 109: optimized =   1660
+Bin 110: optimized =   1595
+Bin 111: optimized =   1490
+Bin 112: optimized =   1419
+Bin 113: optimized =   1432
+Bin 114: optimized =   1410
+Bin 115: optimized =   1482
+Bin 116: optimized =   1513
+Bin 117: optimized =   1484
+Bin 118: optimized =   1538
+Bin 119: optimized =   1503
+Bin 120: optimized =   1663
+Bin 121: optimized =   1692
+Bin 122: optimized =   1812
+Bin 123: optimized =   1787
+Bin 124: optimized =   1954
+Bin 125: optimized =   2006
+Bin 126: optimized =   2038
+Bin 127: optimized =   2309
+Bin 128: optimized =   2595
+Bin 129: optimized =   2650
+Bin 130: optimized =   2759
+Bin 131: optimized =   2776
+Bin 132: optimized =   2712
+Bin 133: optimized =   2484
+Bin 134: optimized =   2264
+Bin 135: optimized =   2143
+Bin 136: optimized =   2057
+Bin 137: optimized =   2022
+Bin 138: optimized =   2225
+Bin 139: optimized =   2209
+Bin 140: optimized =   2438
+Bin 141: optimized =   2633
+Bin 142: optimized =   2619
+Bin 143: optimized =   2742
+Bin 144: optimized =   2672
+Bin 145: optimized =   2752
+Bin 146: optimized =   2611
+Bin 147: optimized =   2441
+Bin 148: optimized =   2475
+Bin 149: optimized =   2386
+Bin 150: optimized =   2443
+Bin 151: optimized =   2609
+Bin 152: optimized =   2726
+Bin 153: optimized =   2859
+Bin 154: optimized =   2842
+Bin 155: optimized =   2745
+Bin 156: optimized =   2564
+Bin 157: optimized =   2368
+Bin 158: optimized =   2145
+Bin 159: optimized =   1927
+Bin 160: optimized =   1760
+Bin 161: optimized =   1655
+Bin 162: optimized =   1529
+Bin 163: optimized =   1401
+Bin 164: optimized =   1303
+Bin 165: optimized =   1317
+Bin 166: optimized =   1280
+Bin 167: optimized =   1267
+Bin 168: optimized =   1157
+Bin 169: optimized =   1223
+Bin 170: optimized =   1266
+Bin 171: optimized =   1282
+Bin 172: optimized =   1294
+Bin 173: optimized =   1251
+Bin 174: optimized =   1188
+Bin 175: optimized =   1191
+Bin 176: optimized =   1125
+Bin 177: optimized =   1057
+Bin 178: optimized =    986
+Bin 179: optimized =    878
+Bin 180: optimized =    747
+Bin 181: optimized =    692
+Bin 182: optimized =    669
+Bin 183: optimized =    644
+Bin 184: optimized =    681
+Bin 185: optimized =    635
+Bin 186: optimized =    604
+Bin 187: optimized =    664
+Bin 188: optimized =    720
+Bin 189: optimized =    761
+Bin 190: optimized =    785
+Bin 191: optimized =    865
+Bin 192: optimized =    860
+Bin 193: optimized =    904
+Bin 194: optimized =    936
+Bin 195: optimized =    929
+Bin 196: optimized =    873
+Bin 197: optimized =    926
+Bin 198: optimized =    883
+Bin 199: optimized =    794
+Bin 200: optimized =    805
+Bin 201: optimized =    795
+Bin 202: optimized =    791
+Bin 203: optimized =    807
+Bin 204: optimized =    829
+Bin 205: optimized =    910
+Bin 206: optimized =    990
+Bin 207: optimized =    999
+Bin 208: optimized =    987
+Bin 209: optimized =    967
+Bin 210: optimized =    918
+Bin 211: optimized =    863
+Bin 212: optimized =    779
+Bin 213: optimized =    686
+Bin 214: optimized =    553
+Bin 215: optimized =    443
+Bin 216: optimized =    361
+Bin 217: optimized =    360
+Bin 218: optimized =    321
+Bin 219: optimized =    285
+Bin 220: optimized =    216
+Bin 221: optimized =    206
+Bin 222: optimized =    186
+Bin 223: optimized =    151
+Bin 224: optimized =     99
+Bin 225: optimized =     82
+Bin 226: optimized =     46
+Bin 227: optimized =     57
+Bin 228: optimized =     43
+Bin 229: optimized =     19
+Bin 230: optimized =     17
+Bin 231: optimized =     13
+Bin 232: optimized =      3
+Bin 233: optimized =      9
+Bin 234: optimized =      2
+Bin 235: optimized =      0
+Bin 236: optimized =      1
+Bin 237: optimized =      0
+Bin 238: optimized =      1
+Bin 239: optimized =      0
+Bin 240: optimized =      0
+Bin 241: optimized =      0
+Bin 242: optimized =      0
+Bin 243: optimized =      1
+Bin 244: optimized =      1
+Bin 245: optimized =      1
+Bin 246: optimized =      0
+Bin 247: optimized =      1
+Bin 248: optimized =      0
+Bin 249: optimized =      0
+Bin 250: optimized =      0
+Bin 251: optimized =      0
+Bin 252: optimized =      0
+Bin 253: optimized =      0
+Bin 254: optimized =      0
+Bin 255: optimized =      0
+breaking loop due to: exiting with last active thread context.
+Ticks: 112746424500
+Exiting because  exiting with last active thread context
+Vse simulacije za nalogo 1 zakljucene.
